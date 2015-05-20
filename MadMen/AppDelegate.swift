@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 ritmatter. All rights reserved.
 //
 
+import Parse
+import Bolts
 import UIKit
 
 @UIApplicationMain
@@ -15,6 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    // [Optional] Power your app with Local Datastore. For more info, go to
+    // https://parse.com/docs/ios_guide#localdatastore/iOS
+    Parse.enableLocalDatastore()
+    
+    // Initialize Parse.
+    Parse.setApplicationId("Nglf0a7Mt8OncXu22k8UDEN4JmJryeEeVOA5xS09",
+      clientKey: "O57X2l5Qpz6gZMe6bBHccNkqJplUO56Ok9xPbghD")
+    
+    // [Optional] Track statistics around application opens.
+    PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+
     // Override point for customization after application launch.
     return true
   }
