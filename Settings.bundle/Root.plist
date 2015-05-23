@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Values</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+				<integer>5</integer>
+			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Quote Notifications</string>
+			<key>Key</key>
+			<string>quote_notifications</string>
+			<key>DefaultValue</key>
+			<integer>3</integer>
+			<key>Titles</key>
+			<array>
+				<string>Hourly</string>
+				<string>Every 3 Hours</string>
+				<string>Every 6 Hours</string>
+				<string>Daily</string>
+				<string>Weekly</string>
+				<string>Never</string>
+			</array>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

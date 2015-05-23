@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
 
     // Override point for customization after application launch.
+    application.registerUserNotificationSettings(UIUserNotificationSettings(
+      forTypes: .Alert | .Badge | .Sound, categories: nil))
     return true
   }
 

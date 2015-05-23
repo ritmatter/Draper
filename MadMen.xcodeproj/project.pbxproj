@@ -30,6 +30,8 @@
 		8900F4031B0C168000C698B9 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8900F3FF1B0C168000C698B9 /* ParseUI.framework */; };
 		8900F4041B0C168000C698B9 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8900F4001B0C168000C698B9 /* ParseFacebookUtilsV4.framework */; };
 		8900F4051B0C168000C698B9 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8900F4011B0C168000C698B9 /* ParseFacebookUtils.framework */; };
+		89CFD11C1B0FCBF0001BE82F /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CFD11B1B0FCBF0001BE82F /* UIViewExtensions.swift */; };
+		89CFD11E1B11304D001BE82F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD11D1B11304D001BE82F /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		8900F3FF1B0C168000C698B9 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		8900F4001B0C168000C698B9 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		8900F4011B0C168000C698B9 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		89CFD11B1B0FCBF0001BE82F /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		89CFD11D1B11304D001BE82F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 		8900F3AD1B0C0BB800C698B9 = {
 			isa = PBXGroup;
 			children = (
+				89CFD11D1B11304D001BE82F /* Settings.bundle */,
 				8900F3E71B0C128200C698B9 /* Frameworks */,
 				8900F3B81B0C0BB800C698B9 /* MadMen */,
 				8900F3CE1B0C0BB800C698B9 /* MadMenTests */,
@@ -135,6 +140,7 @@
 				8900F3C21B0C0BB800C698B9 /* Images.xcassets */,
 				8900F3C41B0C0BB800C698B9 /* LaunchScreen.xib */,
 				8900F3B91B0C0BB800C698B9 /* Supporting Files */,
+				89CFD11B1B0FCBF0001BE82F /* UIViewExtensions.swift */,
 			);
 			path = MadMen;
 			sourceTree = "<group>";
@@ -269,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CFD11E1B11304D001BE82F /* Settings.bundle in Resources */,
 				8900F3C11B0C0BB800C698B9 /* Main.storyboard in Resources */,
 				8900F3C61B0C0BB800C698B9 /* LaunchScreen.xib in Resources */,
 				8900F3C31B0C0BB800C698B9 /* Images.xcassets in Resources */,
@@ -290,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8900F3BE1B0C0BB800C698B9 /* ViewController.swift in Sources */,
+				89CFD11C1B0FCBF0001BE82F /* UIViewExtensions.swift in Sources */,
 				8900F3BC1B0C0BB800C698B9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +431,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MadMen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -439,6 +448,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = MadMen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -498,6 +508,7 @@
 				8900F3D71B0C0BB900C698B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8900F3D81B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "MadMenTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +517,7 @@
 				8900F3DA1B0C0BB900C698B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
