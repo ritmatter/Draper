@@ -11,7 +11,6 @@
 		8900F3BE1B0C0BB800C698B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8900F3BD1B0C0BB800C698B9 /* ViewController.swift */; };
 		8900F3C11B0C0BB800C698B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8900F3BF1B0C0BB800C698B9 /* Main.storyboard */; };
 		8900F3C31B0C0BB800C698B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8900F3C21B0C0BB800C698B9 /* Images.xcassets */; };
-		8900F3C61B0C0BB800C698B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8900F3C41B0C0BB800C698B9 /* LaunchScreen.xib */; };
 		8900F3D21B0C0BB900C698B9 /* MadMenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8900F3D11B0C0BB900C698B9 /* MadMenTests.swift */; };
 		8900F3E11B0C126000C698B9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8900F3DB1B0C126000C698B9 /* Bolts.framework */; };
 		8900F3E61B0C126000C698B9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8900F3E01B0C126000C698B9 /* Parse.framework */; };
@@ -32,6 +31,22 @@
 		8900F4051B0C168000C698B9 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8900F4011B0C168000C698B9 /* ParseFacebookUtils.framework */; };
 		89CFD11C1B0FCBF0001BE82F /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CFD11B1B0FCBF0001BE82F /* UIViewExtensions.swift */; };
 		89CFD11E1B11304D001BE82F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD11D1B11304D001BE82F /* Settings.bundle */; };
+		89CFD1231B126E4C001BE82F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD1211B126E4C001BE82F /* Default-568h@2x.png */; };
+		89CFD1371B12715C001BE82F /* CooperHewitt-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD1271B127111001BE82F /* CooperHewitt-Bold.otf */; };
+		89CFD1381B1271B1001BE82F /* CooperHewitt-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD1281B127111001BE82F /* CooperHewitt-BoldItalic.otf */; };
+		89CFD1391B1271B1001BE82F /* CooperHewitt-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD1291B127111001BE82F /* CooperHewitt-Book.otf */; };
+		89CFD13A1B1271B1001BE82F /* CooperHewitt-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD12A1B127111001BE82F /* CooperHewitt-BookItalic.otf */; };
+		89CFD13B1B1271B1001BE82F /* CooperHewitt-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD12B1B127111001BE82F /* CooperHewitt-Heavy.otf */; };
+		89CFD13C1B1271B1001BE82F /* CooperHewitt-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD12C1B127111001BE82F /* CooperHewitt-HeavyItalic.otf */; };
+		89CFD13D1B1271B1001BE82F /* CooperHewitt-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD12D1B127111001BE82F /* CooperHewitt-Light.otf */; };
+		89CFD13E1B1271B1001BE82F /* CooperHewitt-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD12E1B127111001BE82F /* CooperHewitt-LightItalic.otf */; };
+		89CFD13F1B1271B1001BE82F /* CooperHewitt-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD12F1B127111001BE82F /* CooperHewitt-Medium.otf */; };
+		89CFD1401B1271B1001BE82F /* CooperHewitt-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD1301B127111001BE82F /* CooperHewitt-MediumItalic.otf */; };
+		89CFD1411B1271B1001BE82F /* CooperHewitt-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD1311B127111001BE82F /* CooperHewitt-Semibold.otf */; };
+		89CFD1421B1271B1001BE82F /* CooperHewitt-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD1321B127111001BE82F /* CooperHewitt-SemiboldItalic.otf */; };
+		89CFD1431B1271B1001BE82F /* CooperHewitt-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD1331B127111001BE82F /* CooperHewitt-Thin.otf */; };
+		89CFD1441B1271B1001BE82F /* CooperHewitt-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD1341B127111001BE82F /* CooperHewitt-ThinItalic.otf */; };
+		89CFD1481B127DE6001BE82F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CFD1471B127DE6001BE82F /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +66,6 @@
 		8900F3BD1B0C0BB800C698B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8900F3C01B0C0BB800C698B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8900F3C21B0C0BB800C698B9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8900F3C51B0C0BB800C698B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8900F3CB1B0C0BB800C698B9 /* MadMenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadMenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8900F3D01B0C0BB900C698B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8900F3D11B0C0BB900C698B9 /* MadMenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadMenTests.swift; sourceTree = "<group>"; };
@@ -74,6 +88,22 @@
 		8900F4011B0C168000C698B9 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		89CFD11B1B0FCBF0001BE82F /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		89CFD11D1B11304D001BE82F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		89CFD1211B126E4C001BE82F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		89CFD1271B127111001BE82F /* CooperHewitt-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CooperHewitt-Bold.otf"; path = "../CooperHewitt-Bold.otf"; sourceTree = "<group>"; };
+		89CFD1281B127111001BE82F /* CooperHewitt-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CooperHewitt-BoldItalic.otf"; path = "../CooperHewitt-BoldItalic.otf"; sourceTree = "<group>"; };
+		89CFD1291B127111001BE82F /* CooperHewitt-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CooperHewitt-Book.otf"; path = "../CooperHewitt-Book.otf"; sourceTree = "<group>"; };
+		89CFD12A1B127111001BE82F /* CooperHewitt-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CooperHewitt-BookItalic.otf"; path = "../CooperHewitt-BookItalic.otf"; sourceTree = "<group>"; };
+		89CFD12B1B127111001BE82F /* CooperHewitt-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CooperHewitt-Heavy.otf"; path = "../CooperHewitt-Heavy.otf"; sourceTree = "<group>"; };
+		89CFD12C1B127111001BE82F /* CooperHewitt-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CooperHewitt-HeavyItalic.otf"; path = "../CooperHewitt-HeavyItalic.otf"; sourceTree = "<group>"; };
+		89CFD12D1B127111001BE82F /* CooperHewitt-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CooperHewitt-Light.otf"; path = "../CooperHewitt-Light.otf"; sourceTree = "<group>"; };
+		89CFD12E1B127111001BE82F /* CooperHewitt-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CooperHewitt-LightItalic.otf"; path = "../CooperHewitt-LightItalic.otf"; sourceTree = "<group>"; };
+		89CFD12F1B127111001BE82F /* CooperHewitt-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CooperHewitt-Medium.otf"; path = "../CooperHewitt-Medium.otf"; sourceTree = "<group>"; };
+		89CFD1301B127111001BE82F /* CooperHewitt-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CooperHewitt-MediumItalic.otf"; path = "../CooperHewitt-MediumItalic.otf"; sourceTree = "<group>"; };
+		89CFD1311B127111001BE82F /* CooperHewitt-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CooperHewitt-Semibold.otf"; path = "../CooperHewitt-Semibold.otf"; sourceTree = "<group>"; };
+		89CFD1321B127111001BE82F /* CooperHewitt-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CooperHewitt-SemiboldItalic.otf"; path = "../CooperHewitt-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		89CFD1331B127111001BE82F /* CooperHewitt-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CooperHewitt-Thin.otf"; path = "../CooperHewitt-Thin.otf"; sourceTree = "<group>"; };
+		89CFD1341B127111001BE82F /* CooperHewitt-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CooperHewitt-ThinItalic.otf"; path = "../CooperHewitt-ThinItalic.otf"; sourceTree = "<group>"; };
+		89CFD1471B127DE6001BE82F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +144,8 @@
 		8900F3AD1B0C0BB800C698B9 = {
 			isa = PBXGroup;
 			children = (
+				89CFD1471B127DE6001BE82F /* Default@2x.png */,
+				89CFD1211B126E4C001BE82F /* Default-568h@2x.png */,
 				89CFD11D1B11304D001BE82F /* Settings.bundle */,
 				8900F3E71B0C128200C698B9 /* Frameworks */,
 				8900F3B81B0C0BB800C698B9 /* MadMen */,
@@ -134,11 +166,11 @@
 		8900F3B81B0C0BB800C698B9 /* MadMen */ = {
 			isa = PBXGroup;
 			children = (
+				89CFD1351B12713B001BE82F /* Resources */,
 				8900F3BB1B0C0BB800C698B9 /* AppDelegate.swift */,
 				8900F3BD1B0C0BB800C698B9 /* ViewController.swift */,
 				8900F3BF1B0C0BB800C698B9 /* Main.storyboard */,
 				8900F3C21B0C0BB800C698B9 /* Images.xcassets */,
-				8900F3C41B0C0BB800C698B9 /* LaunchScreen.xib */,
 				8900F3B91B0C0BB800C698B9 /* Supporting Files */,
 				89CFD11B1B0FCBF0001BE82F /* UIViewExtensions.swift */,
 			);
@@ -192,6 +224,35 @@
 				8900F3E01B0C126000C698B9 /* Parse.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89CFD1351B12713B001BE82F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89CFD1361B127143001BE82F /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		89CFD1361B127143001BE82F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				89CFD1271B127111001BE82F /* CooperHewitt-Bold.otf */,
+				89CFD1281B127111001BE82F /* CooperHewitt-BoldItalic.otf */,
+				89CFD1291B127111001BE82F /* CooperHewitt-Book.otf */,
+				89CFD12A1B127111001BE82F /* CooperHewitt-BookItalic.otf */,
+				89CFD12B1B127111001BE82F /* CooperHewitt-Heavy.otf */,
+				89CFD12C1B127111001BE82F /* CooperHewitt-HeavyItalic.otf */,
+				89CFD12D1B127111001BE82F /* CooperHewitt-Light.otf */,
+				89CFD12E1B127111001BE82F /* CooperHewitt-LightItalic.otf */,
+				89CFD12F1B127111001BE82F /* CooperHewitt-Medium.otf */,
+				89CFD1301B127111001BE82F /* CooperHewitt-MediumItalic.otf */,
+				89CFD1311B127111001BE82F /* CooperHewitt-Semibold.otf */,
+				89CFD1321B127111001BE82F /* CooperHewitt-SemiboldItalic.otf */,
+				89CFD1331B127111001BE82F /* CooperHewitt-Thin.otf */,
+				89CFD1341B127111001BE82F /* CooperHewitt-ThinItalic.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,9 +336,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CFD1381B1271B1001BE82F /* CooperHewitt-BoldItalic.otf in Resources */,
+				89CFD1391B1271B1001BE82F /* CooperHewitt-Book.otf in Resources */,
+				89CFD13A1B1271B1001BE82F /* CooperHewitt-BookItalic.otf in Resources */,
+				89CFD13B1B1271B1001BE82F /* CooperHewitt-Heavy.otf in Resources */,
+				89CFD13C1B1271B1001BE82F /* CooperHewitt-HeavyItalic.otf in Resources */,
+				89CFD13D1B1271B1001BE82F /* CooperHewitt-Light.otf in Resources */,
+				89CFD13E1B1271B1001BE82F /* CooperHewitt-LightItalic.otf in Resources */,
+				89CFD13F1B1271B1001BE82F /* CooperHewitt-Medium.otf in Resources */,
+				89CFD1401B1271B1001BE82F /* CooperHewitt-MediumItalic.otf in Resources */,
+				89CFD1411B1271B1001BE82F /* CooperHewitt-Semibold.otf in Resources */,
+				89CFD1421B1271B1001BE82F /* CooperHewitt-SemiboldItalic.otf in Resources */,
+				89CFD1431B1271B1001BE82F /* CooperHewitt-Thin.otf in Resources */,
+				89CFD1441B1271B1001BE82F /* CooperHewitt-ThinItalic.otf in Resources */,
 				89CFD11E1B11304D001BE82F /* Settings.bundle in Resources */,
+				89CFD1371B12715C001BE82F /* CooperHewitt-Bold.otf in Resources */,
+				89CFD1231B126E4C001BE82F /* Default-568h@2x.png in Resources */,
+				89CFD1481B127DE6001BE82F /* Default@2x.png in Resources */,
 				8900F3C11B0C0BB800C698B9 /* Main.storyboard in Resources */,
-				8900F3C61B0C0BB800C698B9 /* LaunchScreen.xib in Resources */,
 				8900F3C31B0C0BB800C698B9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,14 +403,6 @@
 				8900F3C01B0C0BB800C698B9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8900F3C41B0C0BB800C698B9 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8900F3C51B0C0BB800C698B9 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

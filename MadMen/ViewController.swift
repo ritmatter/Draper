@@ -25,24 +25,75 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    NSNotificationCenter.defaultCenter().addObserver(self, selector: "defaultsChanged:",
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("defaultsChanged"),
       name: NSUserDefaultsDidChangeNotification, object: nil)
 
+    var leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+    leftSwipe.direction = .Left
+    view.addGestureRecognizer(leftSwipe)
     retrieveQuotes()
-    // Do any additional setup after loading the view, typically from a nib.
+  }
+  
+  func setNotifications() {
+    let defaults = NSUserDefaults.standardUserDefaults()
+    var n = defaults.stringForKey("quote_notifications")
+    
+    if n == nil {
+      n = "3"
+    }
+    let quote_notification:Int = n!.toInt()!
+    var interval: Int
+
+    switch quote_notification {
+      // Hourly
+    case 0:
+      interval = 60*60
+      break
+      
+      // Every 3 Hours
+    case 1:
+      interval = 60*60*3
+      break
+      
+      // Every 6 Hours
+    case 2:
+      interval = 60*60*6
+      break
+      
+      // Daily
+    case 3:
+      interval = 60*60*24
+      break
+      
+      // Weekly
+    case 4:
+      interval = 60*60*24*7
+      break
+      
+      // Never
+    case 5:
+      interval = 0
+      break
+      
+      // Daily
+    default:
+      interval = 60*60*24
+      break
+    }
+    
+    scheduleNotifications(interval)
   }
 
-  func defaultsChanged(note: NSNotification) {
-    println("The settings changed OMMG!")
+  func defaultsChanged() {
+    setNotifications()
   }
 
   deinit {
     NSNotificationCenter.defaultCenter().removeObserver(self)
   }
 
-  // Schedule notifications for every 3 hours
-  // Delete all prior notifications
-  func scheduleNotifications() {
+  func scheduleNotifications(interval: Int) {
+
     // Delete all existing notifications
     var app:UIApplication = UIApplication.sharedApplication()
     for event in app.scheduledLocalNotifications {
@@ -50,11 +101,15 @@ class ViewController: UIViewController {
       app.cancelLocalNotification(notification)
     }
     
+    // If the interval provided is 0, then do just return
+    if interval == 0 {
+      return
+    }
+    
     // Schedule 64 new notifications (maximum possible)
-    var interval = 0
     for i in 0...63 {
       //let date:NSDate = NSDate(timeIntervalSinceNow: NSTimeInterval(i))
-      let date:NSDate = NSDate(timeIntervalSinceNow: NSTimeInterval(60*60*24*i))
+      let date:NSDate = NSDate(timeIntervalSinceNow: NSTimeInterval(interval*i))
       var localNotification = UILocalNotification()
       let quote = quotes[Int(arc4random_uniform(UInt32(quotes.count)))]
       let text = quote["text"] as! String
@@ -75,10 +130,8 @@ class ViewController: UIViewController {
     return true
   }
 
-  override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
-    if motion == .MotionShake {
-      setQuote()
-    }
+  func handleSwipes(sender:UISwipeGestureRecognizer) {
+    setQuote()
   }
 
   // Sets a new quote. Assumes that we have the list of quotes
@@ -125,7 +178,8 @@ class ViewController: UIViewController {
         self.quotes = (quotes as? [PFObject])
         
         self.setQuote()
-        self.scheduleNotifications()
+        
+        self.setNotifications()
       }
     })
   }
