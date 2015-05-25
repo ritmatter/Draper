@@ -11,7 +11,7 @@
 		8900F3BE1B0C0BB800C698B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8900F3BD1B0C0BB800C698B9 /* ViewController.swift */; };
 		8900F3C11B0C0BB800C698B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8900F3BF1B0C0BB800C698B9 /* Main.storyboard */; };
 		8900F3C31B0C0BB800C698B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8900F3C21B0C0BB800C698B9 /* Images.xcassets */; };
-		8900F3D21B0C0BB900C698B9 /* MadMenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8900F3D11B0C0BB900C698B9 /* MadMenTests.swift */; };
+		8900F3D21B0C0BB900C698B9 /* DraperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8900F3D11B0C0BB900C698B9 /* DraperTests.swift */; };
 		8900F3E11B0C126000C698B9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8900F3DB1B0C126000C698B9 /* Bolts.framework */; };
 		8900F3E61B0C126000C698B9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8900F3E01B0C126000C698B9 /* Parse.framework */; };
 		8900F3E91B0C12C500C698B9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8900F3E81B0C12C500C698B9 /* AudioToolbox.framework */; };
@@ -60,15 +60,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8900F3B61B0C0BB800C698B9 /* MadMen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadMen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8900F3B61B0C0BB800C698B9 /* Draper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8900F3BA1B0C0BB800C698B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8900F3BB1B0C0BB800C698B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8900F3BD1B0C0BB800C698B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8900F3C01B0C0BB800C698B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8900F3C21B0C0BB800C698B9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8900F3CB1B0C0BB800C698B9 /* MadMenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadMenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8900F3CB1B0C0BB800C698B9 /* Draper.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Draper.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8900F3D01B0C0BB900C698B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8900F3D11B0C0BB900C698B9 /* MadMenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadMenTests.swift; sourceTree = "<group>"; };
+		8900F3D11B0C0BB900C698B9 /* DraperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraperTests.swift; sourceTree = "<group>"; };
 		8900F3DB1B0C126000C698B9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		8900F3E01B0C126000C698B9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		8900F3E81B0C12C500C698B9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -148,8 +148,8 @@
 				89CFD1211B126E4C001BE82F /* Default-568h@2x.png */,
 				89CFD11D1B11304D001BE82F /* Settings.bundle */,
 				8900F3E71B0C128200C698B9 /* Frameworks */,
-				8900F3B81B0C0BB800C698B9 /* MadMen */,
-				8900F3CE1B0C0BB800C698B9 /* MadMenTests */,
+				8900F3B81B0C0BB800C698B9 /* Draper */,
+				8900F3CE1B0C0BB800C698B9 /* DraperTests */,
 				8900F3B71B0C0BB800C698B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -157,13 +157,13 @@
 		8900F3B71B0C0BB800C698B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8900F3B61B0C0BB800C698B9 /* MadMen.app */,
-				8900F3CB1B0C0BB800C698B9 /* MadMenTests.xctest */,
+				8900F3B61B0C0BB800C698B9 /* Draper.app */,
+				8900F3CB1B0C0BB800C698B9 /* Draper.temp_caseinsensitive_renameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8900F3B81B0C0BB800C698B9 /* MadMen */ = {
+		8900F3B81B0C0BB800C698B9 /* Draper */ = {
 			isa = PBXGroup;
 			children = (
 				89CFD1351B12713B001BE82F /* Resources */,
@@ -174,6 +174,7 @@
 				8900F3B91B0C0BB800C698B9 /* Supporting Files */,
 				89CFD11B1B0FCBF0001BE82F /* UIViewExtensions.swift */,
 			);
+			name = Draper;
 			path = MadMen;
 			sourceTree = "<group>";
 		};
@@ -185,12 +186,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8900F3CE1B0C0BB800C698B9 /* MadMenTests */ = {
+		8900F3CE1B0C0BB800C698B9 /* DraperTests */ = {
 			isa = PBXGroup;
 			children = (
-				8900F3D11B0C0BB900C698B9 /* MadMenTests.swift */,
+				8900F3D11B0C0BB900C698B9 /* DraperTests.swift */,
 				8900F3CF1B0C0BB900C698B9 /* Supporting Files */,
 			);
+			name = DraperTests;
 			path = MadMenTests;
 			sourceTree = "<group>";
 		};
@@ -258,9 +260,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8900F3B51B0C0BB800C698B9 /* MadMen */ = {
+		8900F3B51B0C0BB800C698B9 /* Draper.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8900F3D51B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "MadMen" */;
+			buildConfigurationList = 8900F3D51B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "Draper.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				8900F3B21B0C0BB800C698B9 /* Sources */,
 				8900F3B31B0C0BB800C698B9 /* Frameworks */,
@@ -270,14 +272,14 @@
 			);
 			dependencies = (
 			);
-			name = MadMen;
+			name = Draper.temp_caseinsensitive_rename;
 			productName = MadMen;
-			productReference = 8900F3B61B0C0BB800C698B9 /* MadMen.app */;
+			productReference = 8900F3B61B0C0BB800C698B9 /* Draper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8900F3CA1B0C0BB800C698B9 /* MadMenTests */ = {
+		8900F3CA1B0C0BB800C698B9 /* Draper.temp_caseinsensitive_renameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8900F3D81B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "MadMenTests" */;
+			buildConfigurationList = 8900F3D81B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "Draper.temp_caseinsensitive_renameTests" */;
 			buildPhases = (
 				8900F3C71B0C0BB800C698B9 /* Sources */,
 				8900F3C81B0C0BB800C698B9 /* Frameworks */,
@@ -288,9 +290,9 @@
 			dependencies = (
 				8900F3CD1B0C0BB800C698B9 /* PBXTargetDependency */,
 			);
-			name = MadMenTests;
+			name = Draper.temp_caseinsensitive_renameTests;
 			productName = MadMenTests;
-			productReference = 8900F3CB1B0C0BB800C698B9 /* MadMenTests.xctest */;
+			productReference = 8900F3CB1B0C0BB800C698B9 /* Draper.temp_caseinsensitive_renameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -312,7 +314,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8900F3B11B0C0BB800C698B9 /* Build configuration list for PBXProject "MadMen" */;
+			buildConfigurationList = 8900F3B11B0C0BB800C698B9 /* Build configuration list for PBXProject "Draper" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -325,8 +327,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8900F3B51B0C0BB800C698B9 /* MadMen */,
-				8900F3CA1B0C0BB800C698B9 /* MadMenTests */,
+				8900F3B51B0C0BB800C698B9 /* Draper.temp_caseinsensitive_rename */,
+				8900F3CA1B0C0BB800C698B9 /* Draper.temp_caseinsensitive_renameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -382,7 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8900F3D21B0C0BB900C698B9 /* MadMenTests.swift in Sources */,
+				8900F3D21B0C0BB900C698B9 /* DraperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +393,7 @@
 /* Begin PBXTargetDependency section */
 		8900F3CD1B0C0BB800C698B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8900F3B51B0C0BB800C698B9 /* MadMen */;
+			target = 8900F3B51B0C0BB800C698B9 /* Draper.temp_caseinsensitive_rename */;
 			targetProxy = 8900F3CC1B0C0BB800C698B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -501,7 +503,7 @@
 				INFOPLIST_FILE = MadMen/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Draper;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -518,7 +520,7 @@
 				INFOPLIST_FILE = MadMen/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Draper;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -537,8 +539,8 @@
 				);
 				INFOPLIST_FILE = MadMenTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadMen.app/MadMen";
+				PRODUCT_NAME = Draper.temp_caseinsensitive_renameTests;
+				TEST_HOST = "";
 			};
 			name = Debug;
 		};
@@ -552,15 +554,15 @@
 				);
 				INFOPLIST_FILE = MadMenTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadMen.app/MadMen";
+				PRODUCT_NAME = Draper.temp_caseinsensitive_renameTests;
+				TEST_HOST = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8900F3B11B0C0BB800C698B9 /* Build configuration list for PBXProject "MadMen" */ = {
+		8900F3B11B0C0BB800C698B9 /* Build configuration list for PBXProject "Draper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8900F3D31B0C0BB900C698B9 /* Debug */,
@@ -569,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8900F3D51B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "MadMen" */ = {
+		8900F3D51B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "Draper.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8900F3D61B0C0BB900C698B9 /* Debug */,
@@ -578,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8900F3D81B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "MadMenTests" */ = {
+		8900F3D81B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "Draper.temp_caseinsensitive_renameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8900F3D91B0C0BB900C698B9 /* Debug */,

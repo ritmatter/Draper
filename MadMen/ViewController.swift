@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  MadMen
+//  Draper
 //
 //  Created by ritmatter on 5/19/15.
 //  Copyright (c) 2015 ritmatter. All rights reserved.
@@ -14,7 +14,8 @@ class ViewController: UIViewController {
   @IBOutlet weak var speakerLabel: UILabel!
   @IBOutlet weak var textView: UITextView!
   @IBOutlet weak var episodeLabel: UILabel!
-  
+  @IBOutlet weak var backgroundView: UIImageView!
+
   var text = ""
   var speaker = ""
   var season =  1
@@ -22,11 +23,26 @@ class ViewController: UIViewController {
   var episodeTitle = ""
   var quotes: [PFObject]!
 
+  let image_names = [
+    "ad.png",
+    "ad2.png",
+    "ad3.png",
+    "ad4.png",
+    "ad5.png",
+    "ad6.png",
+    "ad7.png",
+    "ad8.png",
+    "ad9.png",
+    "ad10.png"
+  ]
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
     NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("defaultsChanged"),
       name: NSUserDefaultsDidChangeNotification, object: nil)
+    
+    setImage()
 
     var leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
     leftSwipe.direction = .Left
@@ -132,8 +148,20 @@ class ViewController: UIViewController {
 
   func handleSwipes(sender:UISwipeGestureRecognizer) {
     setQuote()
+    setImage()
   }
 
+  // Set a new image
+  func setImage() {
+    let imageName = image_names[Int(arc4random_uniform(UInt32(image_names.count)))]
+    
+    backgroundView.fadeOut(completion: {
+      (finished: Bool) -> Void in
+      self.backgroundView.image = UIImage(named: imageName)
+      self.backgroundView.fadeIn()
+    })
+  }
+  
   // Sets a new quote. Assumes that we have the list of quotes
   func setQuote() {
     let index = Int(arc4random_uniform(UInt32(quotes.count)))

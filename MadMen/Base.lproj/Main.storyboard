@@ -17,7 +17,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MadMen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Draper_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XT1-oa-GJ2"/>
                         <viewControllerLayoutGuide type="bottom" id="sXb-xc-sgy"/>
@@ -26,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ad" translatesAutoresizingMaskIntoConstraints="NO" id="49f-vz-ARS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="49f-vz-ARS">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="tintColor" red="0.003669507575757569" green="0.003669507575757569" blue="0.003669507575757569" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
@@ -34,7 +34,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sre-s7-oUh">
-                                        <rect key="frame" x="114" y="510" width="92" height="50"/>
+                                        <rect key="frame" x="114" y="498" width="92" height="50"/>
                                         <state key="normal" image="sharedraper">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -44,7 +44,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.41999999999999998" colorSpace="calibratedRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvi-dD-DHA">
                                 <rect key="frame" x="16" y="28" width="288" height="355"/>
@@ -75,6 +75,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundView" destination="49f-vz-ARS" id="VSv-EB-Frg"/>
                         <outlet property="episodeLabel" destination="100-7N-gOM" id="AsV-J1-5eQ"/>
                         <outlet property="episodeTitleLabel" destination="aWn-by-dlE" id="mJG-lp-sVR"/>
                         <outlet property="speakerLabel" destination="5sm-Ph-sGi" id="S5T-4y-ZSX"/>
@@ -87,7 +88,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ad" width="320" height="480"/>
         <image name="sharedraper" width="231" height="125"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
