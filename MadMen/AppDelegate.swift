@@ -15,10 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
-  func prefersStatusBarHidden() -> Bool {
-    return true
-  }
-
   // implemented in your application delegate
   func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
     let settings = UIApplication.sharedApplication().currentUserNotificationSettings()

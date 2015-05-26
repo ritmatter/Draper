@@ -66,7 +66,7 @@
 		8900F3BD1B0C0BB800C698B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8900F3C01B0C0BB800C698B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8900F3C21B0C0BB800C698B9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8900F3CB1B0C0BB800C698B9 /* Draper.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Draper.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8900F3CB1B0C0BB800C698B9 /* Draper.Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Draper.Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8900F3D01B0C0BB900C698B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8900F3D11B0C0BB900C698B9 /* DraperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraperTests.swift; sourceTree = "<group>"; };
 		8900F3DB1B0C126000C698B9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				8900F3B61B0C0BB800C698B9 /* Draper.app */,
-				8900F3CB1B0C0BB800C698B9 /* Draper.temp_caseinsensitive_renameTests.xctest */,
+				8900F3CB1B0C0BB800C698B9 /* Draper.Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,9 +260,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8900F3B51B0C0BB800C698B9 /* Draper.temp_caseinsensitive_rename */ = {
+		8900F3B51B0C0BB800C698B9 /* Draper. */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8900F3D51B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "Draper.temp_caseinsensitive_rename" */;
+			buildConfigurationList = 8900F3D51B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "Draper." */;
 			buildPhases = (
 				8900F3B21B0C0BB800C698B9 /* Sources */,
 				8900F3B31B0C0BB800C698B9 /* Frameworks */,
@@ -272,14 +272,14 @@
 			);
 			dependencies = (
 			);
-			name = Draper.temp_caseinsensitive_rename;
+			name = Draper.;
 			productName = MadMen;
 			productReference = 8900F3B61B0C0BB800C698B9 /* Draper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8900F3CA1B0C0BB800C698B9 /* Draper.temp_caseinsensitive_renameTests */ = {
+		8900F3CA1B0C0BB800C698B9 /* Draper.Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8900F3D81B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "Draper.temp_caseinsensitive_renameTests" */;
+			buildConfigurationList = 8900F3D81B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "Draper.Tests" */;
 			buildPhases = (
 				8900F3C71B0C0BB800C698B9 /* Sources */,
 				8900F3C81B0C0BB800C698B9 /* Frameworks */,
@@ -290,9 +290,9 @@
 			dependencies = (
 				8900F3CD1B0C0BB800C698B9 /* PBXTargetDependency */,
 			);
-			name = Draper.temp_caseinsensitive_renameTests;
+			name = Draper.Tests;
 			productName = MadMenTests;
-			productReference = 8900F3CB1B0C0BB800C698B9 /* Draper.temp_caseinsensitive_renameTests.xctest */;
+			productReference = 8900F3CB1B0C0BB800C698B9 /* Draper.Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -327,8 +327,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8900F3B51B0C0BB800C698B9 /* Draper.temp_caseinsensitive_rename */,
-				8900F3CA1B0C0BB800C698B9 /* Draper.temp_caseinsensitive_renameTests */,
+				8900F3B51B0C0BB800C698B9 /* Draper. */,
+				8900F3CA1B0C0BB800C698B9 /* Draper.Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -393,7 +393,7 @@
 /* Begin PBXTargetDependency section */
 		8900F3CD1B0C0BB800C698B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8900F3B51B0C0BB800C698B9 /* Draper.temp_caseinsensitive_rename */;
+			target = 8900F3B51B0C0BB800C698B9 /* Draper. */;
 			targetProxy = 8900F3CC1B0C0BB800C698B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -543,7 +543,7 @@
 				);
 				INFOPLIST_FILE = MadMenTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = Draper.temp_caseinsensitive_renameTests;
+				PRODUCT_NAME = Draper.Tests;
 				TEST_HOST = "";
 			};
 			name = Debug;
@@ -558,7 +558,7 @@
 				);
 				INFOPLIST_FILE = MadMenTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = Draper.temp_caseinsensitive_renameTests;
+				PRODUCT_NAME = Draper.Tests;
 				TEST_HOST = "";
 			};
 			name = Release;
@@ -575,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8900F3D51B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "Draper.temp_caseinsensitive_rename" */ = {
+		8900F3D51B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "Draper." */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8900F3D61B0C0BB900C698B9 /* Debug */,
@@ -584,7 +584,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8900F3D81B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "Draper.temp_caseinsensitive_renameTests" */ = {
+		8900F3D81B0C0BB900C698B9 /* Build configuration list for PBXNativeTarget "Draper.Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8900F3D91B0C0BB900C698B9 /* Debug */,

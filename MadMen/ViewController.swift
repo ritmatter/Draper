@@ -116,7 +116,6 @@ class ViewController: UIViewController {
   }
 
   func defaultsChanged() {
-    println("THE DEFAULTS CHANGED")
     setNotifications()
   }
 
@@ -125,6 +124,11 @@ class ViewController: UIViewController {
   }
 
   func scheduleNotifications(interval: Int) {
+    
+    // Validate that we have all the quotes
+    if self.quotes == nil {
+      return
+    }
 
     // Delete all existing notifications
     var app:UIApplication = UIApplication.sharedApplication()
