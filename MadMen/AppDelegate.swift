@@ -15,6 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
+  func prefersStatusBarHidden() -> Bool {
+    return true
+  }
+
+  // implemented in your application delegate
+  func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
+    let settings = UIApplication.sharedApplication().currentUserNotificationSettings()
+    if settings.types != .None {
+      let viewController = self.window?.rootViewController as! ViewController
+      viewController.setNotifications()
+    }
+  }
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // [Optional] Power your app with Local Datastore. For more info, go to
@@ -31,6 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
     application.registerUserNotificationSettings(UIUserNotificationSettings(
       forTypes: .Alert | .Badge | .Sound, categories: nil))
+    //application.registerForRemoteNotifications()
     return true
   }
 

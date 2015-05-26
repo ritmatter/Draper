@@ -15,6 +15,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var textView: UITextView!
   @IBOutlet weak var episodeLabel: UILabel!
   @IBOutlet weak var backgroundView: UIImageView!
+  @IBOutlet weak var shareButton: UIButton!
 
   var text = ""
   var speaker = ""
@@ -32,8 +33,22 @@ class ViewController: UIViewController {
     "ad6.png",
     "ad7.png",
     "ad8.png",
-    "ad9.png",
-    "ad10.png"
+    "ad10.png",
+    "ad14.png",
+    "ad15.png",
+    "ad22.png",
+    "ad25.png",
+    "coke1.png",
+    "coke2.png",
+    "coke3.png",
+    "coke4.png",
+    "coke10.png",
+    "heinz1.png",
+    "panam1.png",
+    "ford1.png",
+    "budweiser1.png",
+    "budweiser2.png",
+    "kraft1.png"
   ]
 
   override func viewDidLoad() {
@@ -101,6 +116,7 @@ class ViewController: UIViewController {
   }
 
   func defaultsChanged() {
+    println("THE DEFAULTS CHANGED")
     setNotifications()
   }
 
@@ -213,10 +229,20 @@ class ViewController: UIViewController {
   }
   
   @IBAction func shareSheet(sender: AnyObject, quote: PFObject){
-    let activityItem1 = "\(self.text)\n-\(self.speaker)"
-    let activityItem2 = NSURL(string: "http://www.amazon.com")
+    let sendText = "\(self.text)\n-\(self.speaker)"
+    
+    self.shareButton.hidden = true
+    UIGraphicsBeginImageContextWithOptions(UIScreen.mainScreen().bounds.size, false, 0);
+    self.view.drawViewHierarchyInRect(view.bounds, afterScreenUpdates: true)
+    var image:UIImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    self.shareButton.hidden = false
+  
+    //let activityViewController : UIActivityViewController = UIActivityViewController(
+    //  activityItems: [sendText], applicationActivities: nil)
     let activityViewController : UIActivityViewController = UIActivityViewController(
-      activityItems: [activityItem1], applicationActivities: nil)
+      activityItems: [sendText, image], applicationActivities: nil)
     
     activityViewController.excludedActivityTypes = [
       UIActivityTypePostToWeibo,

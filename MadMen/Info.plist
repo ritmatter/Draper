@@ -2,23 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>CooperHewitt-ThinkItalic.otf</string>
-		<string>CooperHewitt-Bold.otf</string>
-		<string>CooperHewitt-BoldItalic.otf</string>
-		<string>CooperHewitt-Book.otf</string>
-		<string>CooperHewitt-BookItalic.otf</string>
-		<string>CooperHewitt-Heavy.otf</string>
-		<string>CooperHewitt-HeavyItalic.otf</string>
-		<string>CooperHewitt-Light.otf</string>
-		<string>CooperHewitt-LightItalic.otf</string>
-		<string>CooperHewitt-Medium.otf</string>
-		<string>CooperHewitt-MediumItalic.otf</string>
-		<string>CooperHewitt-Semibold.otf</string>
-		<string>CooperHewitt-SemiboldItalic.otf</string>
-		<string>CooperHewitt-Thin.otf</string>
-	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -39,12 +24,31 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>CooperHewitt-ThinkItalic.otf</string>
+		<string>CooperHewitt-Bold.otf</string>
+		<string>CooperHewitt-BoldItalic.otf</string>
+		<string>CooperHewitt-Book.otf</string>
+		<string>CooperHewitt-BookItalic.otf</string>
+		<string>CooperHewitt-Heavy.otf</string>
+		<string>CooperHewitt-HeavyItalic.otf</string>
+		<string>CooperHewitt-Light.otf</string>
+		<string>CooperHewitt-LightItalic.otf</string>
+		<string>CooperHewitt-Medium.otf</string>
+		<string>CooperHewitt-MediumItalic.otf</string>
+		<string>CooperHewitt-Semibold.otf</string>
+		<string>CooperHewitt-SemiboldItalic.otf</string>
+		<string>CooperHewitt-Thin.otf</string>
+	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarHidden</key>
+	<true/>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleDefault</string>
 	<key>UISupportedInterfaceOrientations</key>
