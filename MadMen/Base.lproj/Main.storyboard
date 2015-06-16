@@ -40,7 +40,7 @@
                                             <constraint firstAttribute="width" constant="92" id="6M3-oA-alw"/>
                                             <constraint firstAttribute="height" constant="50" id="Hau-bG-0qx"/>
                                         </constraints>
-                                        <state key="normal" image="sharedraper">
+                                        <state key="normal" image="sharedraper" backgroundImage="sharedraper">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -56,6 +56,22 @@
                                             <action selector="shareSheet:quote:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bad-n0-cgL"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvi-dD-DHA">
+                                        <rect key="frame" x="16" y="18" width="288" height="355"/>
+                                        <string key="text">"The reason you haven’t felt it is because it doesn’t exist. What you call love was invented by guys like me, to sell nylons. You’re born alone and you die alone and this world just drops a bunch of rules on top of you to make you forget those facts. But I never forget. I’m living like there’s no tomorrow, because there isn’t one."</string>
+                                        <color key="textColor" red="0.98205384640000004" green="1" blue="0.9860683254" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="CooperHewitt-Bold" family="Cooper Hewitt" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="-Don Draper" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="5sm-Ph-sGi">
+                                        <rect key="frame" x="16" y="411" width="288" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="qfw-Sd-rm6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CooperHewitt-SemiboldItalic" family="Cooper Hewitt" pointSize="18"/>
+                                        <color key="textColor" red="0.98205384640000004" green="1" blue="0.9860683254" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.41999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -64,15 +80,8 @@
                                     <constraint firstAttribute="centerX" secondItem="Sre-s7-oUh" secondAttribute="centerX" id="Zbn-Ug-u7y"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvi-dD-DHA">
-                                <rect key="frame" x="16" y="28" width="288" height="355"/>
-                                <string key="text">"The reason you haven’t felt it is because it doesn’t exist. What you call love was invented by guys like me, to sell nylons. You’re born alone and you die alone and this world just drops a bunch of rules on top of you to make you forget those facts. But I never forget. I’m living like there’s no tomorrow, because there isn’t one."</string>
-                                <color key="textColor" red="0.98205384640000004" green="1" blue="0.9860683254" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="CooperHewitt-Bold" family="Cooper Hewitt" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Smoke Gets in Your Eyes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="aWn-by-dlE">
-                                <rect key="frame" x="16" y="436" width="288" height="21"/>
+                                <rect key="frame" x="16" y="437" width="288" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="sJ8-BB-zhe"/>
                                 </constraints>
@@ -89,37 +98,21 @@
                                 <color key="textColor" red="0.98205384640000004" green="1" blue="0.9860683254" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-Don Draper" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="5sm-Ph-sGi">
-                                <rect key="frame" x="16" y="407" width="288" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="qfw-Sd-rm6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="CooperHewitt-SemiboldItalic" family="Cooper Hewitt" pointSize="18"/>
-                                <color key="textColor" red="0.98205384640000004" green="1" blue="0.9860683254" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cvi-dD-DHA" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="0O6-l6-Dhn"/>
                             <constraint firstItem="sXb-xc-sgy" firstAttribute="top" secondItem="49f-vz-ARS" secondAttribute="bottom" id="6Jd-oe-5U7"/>
                             <constraint firstItem="aWn-by-dlE" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="9ju-eU-c9B"/>
                             <constraint firstItem="49f-vz-ARS" firstAttribute="top" secondItem="XT1-oa-GJ2" secondAttribute="bottom" id="CHr-3J-XOK"/>
-                            <constraint firstItem="5sm-Ph-sGi" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="ChD-Yd-MNK"/>
                             <constraint firstItem="lLT-il-7V8" firstAttribute="top" secondItem="XT1-oa-GJ2" secondAttribute="bottom" id="FWv-i4-fjh"/>
                             <constraint firstItem="sXb-xc-sgy" firstAttribute="top" secondItem="100-7N-gOM" secondAttribute="bottom" constant="82" id="L3B-4E-5Nz"/>
                             <constraint firstItem="aWn-by-dlE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="LBX-na-vJy"/>
-                            <constraint firstItem="aWn-by-dlE" firstAttribute="top" secondItem="5sm-Ph-sGi" secondAttribute="bottom" constant="5" id="LPQ-Ne-aVl"/>
-                            <constraint firstItem="cvi-dD-DHA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="OMQ-x0-XVH"/>
                             <constraint firstItem="sXb-xc-sgy" firstAttribute="top" secondItem="lLT-il-7V8" secondAttribute="bottom" id="SjO-ta-iqh"/>
                             <constraint firstItem="100-7N-gOM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="SlF-ny-ywq"/>
-                            <constraint firstItem="5sm-Ph-sGi" firstAttribute="top" secondItem="cvi-dD-DHA" secondAttribute="bottom" constant="15" id="Wmn-Ms-Oa2"/>
                             <constraint firstItem="49f-vz-ARS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="aYh-Mj-mUK"/>
-                            <constraint firstItem="5sm-Ph-sGi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="atC-hB-U8e"/>
                             <constraint firstItem="100-7N-gOM" firstAttribute="top" secondItem="aWn-by-dlE" secondAttribute="bottom" constant="5" id="cCD-F1-z8A"/>
                             <constraint firstItem="lLT-il-7V8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="fsr-Hp-Hjm"/>
                             <constraint firstAttribute="trailing" secondItem="49f-vz-ARS" secondAttribute="trailing" id="hya-nS-8fK"/>
-                            <constraint firstItem="cvi-dD-DHA" firstAttribute="top" secondItem="XT1-oa-GJ2" secondAttribute="bottom" constant="20" id="kJT-Mc-dPG"/>
                             <constraint firstItem="100-7N-gOM" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="oXS-Y5-EfW"/>
                             <constraint firstAttribute="trailing" secondItem="lLT-il-7V8" secondAttribute="trailing" id="ynw-2e-eDS"/>
                         </constraints>
